@@ -1,5 +1,7 @@
 # MAM
-This is the code of MAM (Motor Assessment Model) based on Pytorch. We provide a small dataset in `./prepared_data` to demo the codes.
+This is the code of MAM (Motor Assessment Model) based on Pytorch. 
+
+We provide a small dataset in `./prepared_data` to demo the codes.
 
 ## Installation
 `git clone https://github.com/qiang-Blazer/MAM.git`
