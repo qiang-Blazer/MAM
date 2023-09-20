@@ -1,8 +1,12 @@
 # MAM
-This is the code of MAM (Motor Assessment Model) based on Pytorch
+This is the code of MAM (Motor Assessment Model) based on Pytorch. We provide a small dataset in `./prepared_data` to demo the codes.
 
-## Prerequisite
+## Installation
+`git clone https://github.com/qiang-Blazer/MAM.git`
+This will be quickly within 10 seconds.
 
+## Prerequisites
+We run the codes on the Unbuntu 20.04 operating system.
 ```
 matplotlib==3.6.0
 numpy==1.23.1
@@ -13,19 +17,20 @@ torch==1.12.1
 tqdm==4.64.1
 transformers==4.28.1
 ```
-
 Install required packages:
-
 `pip install -r requirements.txt`
 
-## Pretrain the main part of the model
+## Pretrain the central part of the model
 `python pretrain_clip.py`
-
+The pre-trained weights will be in `./checkpoints`.
+This will be down in 5 minutes for the demo dataset.
 ## Train
 `python main.py`
+The results will be in `runs`.
 
 ## Inference
 `python inference.py`
+
 ## Parameters
 
 | Parameter Name         | Type  | Default Value | Description                                          |
