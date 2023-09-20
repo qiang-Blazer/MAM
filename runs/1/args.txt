@@ -1,0 +1,13 @@
+epoch : 300
+batch_size : 32
+cv_id : 0
+joint_in_channels : 3
+joint_hidden_channels : 64
+time_window : 10
+time_step : 1
+optimizer : SGD
+lr : 0.001
+scheduler : CyclicLR
+seed : 0
+tl_margin : 0.4
+with_info : True
