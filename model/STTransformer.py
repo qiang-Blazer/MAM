@@ -11,7 +11,9 @@ class Attention(nn.Module):
         self.attention = nn.Sequential(
             nn.Linear(in_dim, hid_dim),
             nn.Tanh(),
-            nn.Linear(hid_dim, 1)
+            nn.Linear(hid_dim, hid_dim//2),
+            nn.Tanh(),
+            nn.Linear(hid_dim//2, 1)
         )
 
     def forward(self, x):#[N,*,c]
