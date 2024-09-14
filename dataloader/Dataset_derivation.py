@@ -22,6 +22,7 @@ class Dataset_derivation(Dataset):
         FM_minus_len = len(FM_minus)
         FM_plus_ids = [i for i in range(FM_plus_len)]
         FM_minus_ids = [i for i in range(FM_minus_len)]
+        random.seed(0)
         random.shuffle(FM_plus_ids)
         random.shuffle(FM_minus_ids)
 
