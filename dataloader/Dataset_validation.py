@@ -7,7 +7,7 @@ import pandas as pd
 
 class Dataset_validation(Dataset):
 
-    def __init__(self, cv_id, batch_size=64, train=True):
+    def __init__(self, cv_id, batch_size=64):
         self.batch_size = batch_size
         FM_plus_persons_infos = pd.read_csv("prepared_data/Data_validation/persons_infos_validation_FM+.csv").iloc[:,:4]
         FM_minus_persons_infos = pd.read_csv("prepared_data/Data_validation/persons_infos_validation_FM-.csv").iloc[:,:4]
