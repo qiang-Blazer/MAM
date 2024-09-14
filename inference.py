@@ -41,7 +41,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     #load validation data
-    val_dataset = Dataset_validation(cv_id=1, batch_size=args.batch_size, train=False)
+    val_dataset = Dataset_validation(cv_id=1, batch_size=args.batch_size)
     val_dataloader = DataLoader(val_dataset,batch_size=2,drop_last=True)
 
 
